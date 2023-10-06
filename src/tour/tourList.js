@@ -15,7 +15,7 @@ const TourList = () => {
             //에러가 없다면 try 안에 코드 실행
             //에러가 있다면 catch 값으로 넘어감 */
             try {
-                const response = await axios.get(`http://apis.data.go.kr/6260000/AttractionService/getAttractionKr?serviceKey=${key}&numOfRows=50&pageNo=1&resultType=json`)
+                const response = await axios.get(`https://apis.data.go.kr/6260000/AttractionService/getAttractionKr?serviceKey=${key}&numOfRows=50&pageNo=1&resultType=json`)
                 setTour(response.data.getAttractionKr.item)
             } catch(error){
                 console.log(error)
