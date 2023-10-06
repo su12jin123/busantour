@@ -1,38 +1,168 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  font-family: "Pretendard-Regular";
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li {
+  list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+img {
+  width: 100%;
+}
+
+body {
+  width: 767px;
+  max-width: calc(100% - 40px);
+  margin: 0px auto;
+}
+header{
+  padding: 15px 0;
+  
+}
+.logo{
+  height: 50px;
+  width: 100px;
+}
+
+
+
+.logo a img {
+  height: 50px;
+  width: 100px;
+  object-fit: cover;
+}
+
+span {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+strong {
+  font-size: 18px;
+  font-weight: bold;
+  /*  margin-left: 5px; */
+}
+
+.list h3 {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 100;
+  margin-top: 10px;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 100;
+  margin-top: 3px;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.item {
+  border: 1px solid #cacaca;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 15px 10px;
+}
+
+.item:hover {
+  box-shadow: 1px 1px 20px #33333377;
+  cursor: pointer;
+}
+
+.item:hover a {
+  text-decoration: underline;
+}
+
+.bottom {
+  margin: 10px 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+
+.bottom a {
+  font-size: 15px;
+  color: #555;
+}
+
+footer {
+  max-width: 767px;
+  width: 100%;
+  position: fixed;
+  height: 60px;
+  bottom: 0;
+  left: 50%;
+  background-color: #f7f7f7;
+  line-height: 60px;
+  transform: translateX(-50%);
+}
+
+footer ul {
+  display: flex;
+}
+
+footer ul li {
+  width: calc(100% / 4);
+  text-align: center;
+  /*   border-top: 2px solid #555; */
+  cursor: pointer;
+}
+
+footer ul li.on {
+  background-color: #00beff;
+color: white;}
+
+
+footer ul li:hover {
+  background-color: #00beff;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main_list {
+  margin-bottom: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header h1 {
+  text-align: center;
+}
+
+.item span{
+  font-size: 14px;
+  color: #555;
+  display:-webkit-box;
+ -webkit-line-clamp: 2; 
+ -webkit-box-orient: vertical; 
+ overflow: hidden;
+ line-height: 20px;
+}
+
+.top{
+  position: fixed;
+  bottom: 100px;
+  right: 16px;
+  color: white;
+  background-color: #7328a5;
+  width: 60px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
 }
