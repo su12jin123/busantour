@@ -19,9 +19,7 @@ const TourItem = ({article}) => {
                 <div className="bottom">
                 <p>{ADDR1}</p>
             {HOMEPAGE_URL && <a href={HOMEPAGE_URL} target="_blank" rel="noreferrer">바로가기</a>}
-            {/* 홈페이지 있으면 나타나고 없으면 나타나지 않음 */}</div>
-            {/* noreferrer : 해당 페이지로 넘어가기 위해 http에게 요청함 */}
-
+          </div>
             <span>{ITEMCNTNTS}</span> 
            
         </div> /* item end */
